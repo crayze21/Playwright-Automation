@@ -1,0 +1,7 @@
+2026-05-23 15:43:49  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-05-23 15:43:52  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-05-23 15:44:01  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-05-23 15:44:03  [96mINFO[0m  pms_pw.conftest                 E2E login successful
+2026-05-23 15:44:03  [96mINFO[0m  pms_pw.test_e2e_prescription    === E2E STAGE 4: Create prescription ===
+2026-05-23 15:44:03  [96mINFO[0m  pms_pw.conftest                 SKIP  tests/test_e2e_prescription.py::TestPrescriptionWorkflow::test_04_create_prescription[chromium]  (0.00s)
+2026-05-23 15:44:03  [96mINFO[0m  pms_pw.conftest                 E2E browser session closed

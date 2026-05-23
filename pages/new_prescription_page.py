@@ -45,11 +45,13 @@ class NewPrescriptionPage(BasePage):
     # ── Visit fields ───────────────────────────────────────────────────────────
 
     def set_visit_date(self, date_str: str) -> "NewPrescriptionPage":
-        self.set_date(L.VISIT_DATE, date_str)
+        #self.set_date(L.VISIT_DATE, date_str)
+        self.page.locator(L.VISIT_DATE).fill(date_str)
         return self
 
     def set_next_visit_date(self, date_str: str) -> "NewPrescriptionPage":
-        self.set_date(L.NEXT_VISIT_DATE, date_str)
+        #self.set_date(L.NEXT_VISIT_DATE, date_str)
+        self.page.locator(L.NEXT_VISIT_DATE).fill(date_str)
         return self
 
     def enter_bp(self, bp: str) -> "NewPrescriptionPage":

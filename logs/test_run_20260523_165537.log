@@ -1,0 +1,95 @@
+2026-05-23 16:55:38  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-05-23 16:55:41  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-05-23 16:56:31  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.conftest                 E2E login successful
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.test_e2e_prescription    === E2E STAGE 1: Verify dashboard ===
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.step                     ┌─ URL contains dashboard.php
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.step                     └─ PASS  URL contains dashboard.php  (0.00s)
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.step                     ┌─ Welcome message visible
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.step                     └─ PASS  Welcome message visible  (0.01s)
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.step                     ┌─ All four stat boxes visible
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.step                     └─ PASS  All four stat boxes visible  (0.02s)
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.test_e2e_prescription    STAGE 1 PASSED
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_e2e_prescription.py::TestPrescriptionWorkflow::test_01_dashboard_loads[chromium]  (0.03s)
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.test_e2e_prescription    === E2E STAGE 2: Add patient ===
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.test_e2e_prescription    Patient: E2E Patient 0777DA
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.step                     ┌─ Navigate to patients page
+2026-05-23 16:56:34  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patients.php  (attempt 1/3)
+2026-05-23 16:57:00  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patients.php
+2026-05-23 16:57:00  [96mINFO[0m  pms_pw.step                     └─ PASS  Navigate to patients page  (26.35s)
+2026-05-23 16:57:00  [96mINFO[0m  pms_pw.step                     ┌─ Add patient form
+2026-05-23 16:57:00  [96mINFO[0m  pms_pw.pages.patients_page      Adding patient: E2E Patient 0777DA
+2026-05-23 16:57:00  [96mINFO[0m  pms_pw.step                     ┌─ Enter patient name
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter patient name  (0.01s)
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     ┌─ Enter address
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter address  (0.01s)
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     ┌─ Enter CNIC
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter CNIC  (0.01s)
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     ┌─ Set date of birth
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     └─ PASS  Set date of birth  (0.01s)
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     ┌─ Enter phone number
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter phone number  (0.01s)
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     ┌─ Select gender
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     └─ PASS  Select gender  (0.01s)
+2026-05-23 16:57:01  [96mINFO[0m  pms_pw.step                     ┌─ Click Save button
+2026-05-23 16:57:02  [96mINFO[0m  pms_pw.step                     └─ PASS  Click Save button  (1.25s)
+2026-05-23 16:57:02  [96mINFO[0m  pms_pw.step                     └─ PASS  Add patient form  (1.31s)
+2026-05-23 16:57:02  [96mINFO[0m  pms_pw.step                     ┌─ Verify patient in table
+2026-05-23 16:57:03  [96mINFO[0m  pms_pw.step                     └─ PASS  Verify patient in table  (1.11s)
+2026-05-23 16:57:03  [96mINFO[0m  pms_pw.test_e2e_prescription    STAGE 2 PASSED
+2026-05-23 16:57:03  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_e2e_prescription.py::TestPrescriptionWorkflow::test_02_add_new_patient[chromium]  (28.77s)
+2026-05-23 16:57:03  [96mINFO[0m  pms_pw.test_e2e_prescription    === E2E STAGE 3: Add medicine ===
+2026-05-23 16:57:03  [96mINFO[0m  pms_pw.test_e2e_prescription    Medicine: E2EMedE3EAA3
+2026-05-23 16:57:03  [96mINFO[0m  pms_pw.step                     ┌─ Navigate to medicines page
+2026-05-23 16:57:03  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/medicines.php  (attempt 1/3)
+2026-05-23 16:57:04  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/medicines.php
+2026-05-23 16:57:04  [96mINFO[0m  pms_pw.step                     └─ PASS  Navigate to medicines page  (1.10s)
+2026-05-23 16:57:04  [96mINFO[0m  pms_pw.step                     ┌─ Add medicine
+2026-05-23 16:57:04  [96mINFO[0m  pms_pw.pages.medicines_page     Adding medicine: E2EMedE3EAA3
+2026-05-23 16:57:04  [96mINFO[0m  pms_pw.step                     ┌─ Enter medicine name
+2026-05-23 16:57:04  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter medicine name  (0.01s)
+2026-05-23 16:57:04  [96mINFO[0m  pms_pw.step                     ┌─ Click Save
+2026-05-23 16:57:06  [96mINFO[0m  pms_pw.step                     └─ PASS  Click Save  (2.08s)
+2026-05-23 16:57:06  [96mINFO[0m  pms_pw.step                     └─ PASS  Add medicine  (2.09s)
+2026-05-23 16:57:06  [96mINFO[0m  pms_pw.step                     ┌─ Verify medicine in table
+2026-05-23 16:57:07  [96mINFO[0m  pms_pw.step                     └─ PASS  Verify medicine in table  (1.08s)
+2026-05-23 16:57:07  [96mINFO[0m  pms_pw.test_e2e_prescription    STAGE 3 PASSED
+2026-05-23 16:57:07  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_e2e_prescription.py::TestPrescriptionWorkflow::test_03_add_new_medicine[chromium]  (4.27s)
+2026-05-23 16:57:07  [96mINFO[0m  pms_pw.test_e2e_prescription    === E2E STAGE 4: Create prescription ===
+2026-05-23 16:57:07  [96mINFO[0m  pms_pw.step                     ┌─ Navigate to new prescription
+2026-05-23 16:57:07  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/new_prescription.php  (attempt 1/3)
+2026-05-23 16:57:08  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/new_prescription.php
+2026-05-23 16:57:08  [96mINFO[0m  pms_pw.step                     └─ PASS  Navigate to new prescription  (0.65s)
+2026-05-23 16:57:08  [96mINFO[0m  pms_pw.step                     ┌─ Select patient
+2026-05-23 16:57:08  [96mINFO[0m  pms_pw.pages.base_page          Select2 option selected: E2E Patient 0777DA
+2026-05-23 16:57:08  [96mINFO[0m  pms_pw.step                     └─ PASS  Select patient  (0.11s)
+2026-05-23 16:57:08  [96mINFO[0m  pms_pw.step                     ┌─ Fill visit date
+2026-05-23 16:57:08  [91mERROR[0m  pms_pw.step                     └─ FAIL  Fill visit date  (0.01s)
+2026-05-23 16:57:08  [91mERROR[0m  pms_pw.step                        Error: Locator.fill: Error: Malformed value
+Call log:
+  - waiting for locator("[name='visit_date']")
+    - locator resolved to <input type="date" name="visit_date" value="2026-05-23" class="form-control rounded-0"/>
+    - fill("23/05/2026")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+2026-05-23 16:57:08  [93mWARNING[0m  pms_pw.conftest                 Screenshot saved: C:\Users\eugene\PycharmProjects\Playwright-Automation\screenshots\FAIL_tests_test_e2e_prescription.py_TestPrescriptionWorkflow_test_04_create_prescription[chromium]_20260523_165708.png
+2026-05-23 16:57:08  [91mERROR[0m  pms_pw.conftest                 Failure URL: https://torejamedicalclinic.kesug.com/new_prescription.php
+2026-05-23 16:57:08  [96mINFO[0m  pms_pw.conftest                 FAIL  tests/test_e2e_prescription.py::TestPrescriptionWorkflow::test_04_create_prescription[chromium]  (0.77s)
+2026-05-23 16:57:08  [96mINFO[0m  pms_pw.test_e2e_prescription    === E2E STAGE 5: Verify history ===
+2026-05-23 16:57:08  [96mINFO[0m  pms_pw.step                     ┌─ Navigate to patient history
+2026-05-23 16:57:08  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patient_history.php  (attempt 1/3)
+2026-05-23 16:57:09  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patient_history.php
+2026-05-23 16:57:09  [96mINFO[0m  pms_pw.step                     └─ PASS  Navigate to patient history  (0.71s)
+2026-05-23 16:57:09  [96mINFO[0m  pms_pw.step                     ┌─ Search patient history
+2026-05-23 16:57:09  [96mINFO[0m  pms_pw.pages.base_page          Select2 option selected: E2E Patient 0777DA
+2026-05-23 16:58:09  [91mERROR[0m  pms_pw.step                     └─ FAIL  Search patient history  (60.46s)
+2026-05-23 16:58:09  [91mERROR[0m  pms_pw.step                        TimeoutError: Locator.wait_for: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("#history_data") to be visible
+    121 × locator resolved to hidden <tbody id="history_data"></tbody>
+
+2026-05-23 16:58:10  [93mWARNING[0m  pms_pw.conftest                 Screenshot saved: C:\Users\eugene\PycharmProjects\Playwright-Automation\screenshots\FAIL_tests_test_e2e_prescription.py_TestPrescriptionWorkflow_test_05_verify_patient_history[chromium]_20260523_165810.png
+2026-05-23 16:58:10  [91mERROR[0m  pms_pw.conftest                 Failure URL: https://torejamedicalclinic.kesug.com/patient_history.php
+2026-05-23 16:58:10  [96mINFO[0m  pms_pw.conftest                 FAIL  tests/test_e2e_prescription.py::TestPrescriptionWorkflow::test_05_verify_patient_history[chromium]  (61.17s)
+2026-05-23 16:58:10  [96mINFO[0m  pms_pw.conftest                 E2E browser session closed

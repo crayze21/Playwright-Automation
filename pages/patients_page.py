@@ -64,7 +64,7 @@ class PatientsPage(BasePage):
         with step("Enter CNIC"):
             self.page.locator(L.CNIC).fill(cnic)
         with step("Set date of birth"):
-            self.set_date(L.DATE_OF_BIRTH, dob)
+            self.page.locator(L.DATE_OF_BIRTH).fill(dob)
         with step("Enter phone number"):
             self.page.locator(L.PHONE_NUMBER).fill(phone)
         with step("Select gender"):

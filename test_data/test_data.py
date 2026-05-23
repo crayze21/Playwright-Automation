@@ -105,8 +105,8 @@ class E2EData:
         uid = uuid.uuid4().hex[:6].upper()
         return f"E2EMed{uid}"
 
-    VISIT_DATE      = "2026-04-23"
-    NEXT_VISIT_DATE = "2026-05-07"
+    VISIT_DATE      = "23/05/2026"
+    NEXT_VISIT_DATE = "23/06/2026"
     BP              = "120/80"
     WEIGHT          = "68"
     DISEASE         = "E2E Hypertension"

@@ -1,0 +1,32 @@
+2026-05-23 15:27:07  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-05-23 15:27:10  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-05-23 15:27:34  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-05-23 15:27:42  [96mINFO[0m  pms_pw.conftest                 E2E login successful
+2026-05-23 15:27:42  [96mINFO[0m  pms_pw.test_e2e_prescription    === E2E STAGE 2: Add patient ===
+2026-05-23 15:27:42  [96mINFO[0m  pms_pw.test_e2e_prescription    Patient: E2E Patient 66501E
+2026-05-23 15:27:42  [96mINFO[0m  pms_pw.step                     ┌─ Navigate to patients page
+2026-05-23 15:27:42  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patients.php  (attempt 1/3)
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patients.php
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     └─ PASS  Navigate to patients page  (5.14s)
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     ┌─ Add patient form
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.pages.patients_page      Adding patient: E2E Patient 66501E
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     ┌─ Enter patient name
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter patient name  (0.01s)
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     ┌─ Enter address
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter address  (0.01s)
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     ┌─ Enter CNIC
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter CNIC  (0.01s)
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     ┌─ Set date of birth
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     └─ PASS  Set date of birth  (0.01s)
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     ┌─ Enter phone number
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter phone number  (0.02s)
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     ┌─ Select gender
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     └─ PASS  Select gender  (0.01s)
+2026-05-23 15:27:47  [96mINFO[0m  pms_pw.step                     ┌─ Click Save button
+2026-05-23 15:27:48  [96mINFO[0m  pms_pw.step                     └─ PASS  Click Save button  (0.97s)
+2026-05-23 15:27:48  [96mINFO[0m  pms_pw.step                     └─ PASS  Add patient form  (1.03s)
+2026-05-23 15:27:48  [96mINFO[0m  pms_pw.step                     ┌─ Verify patient in table
+2026-05-23 15:27:49  [96mINFO[0m  pms_pw.step                     └─ PASS  Verify patient in table  (1.12s)
+2026-05-23 15:27:49  [96mINFO[0m  pms_pw.test_e2e_prescription    STAGE 2 PASSED
+2026-05-23 15:27:49  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_e2e_prescription.py::TestPrescriptionWorkflow::test_02_add_new_patient[chromium]  (7.30s)
+2026-05-23 15:27:49  [96mINFO[0m  pms_pw.conftest                 E2E browser session closed
