@@ -1,11 +1,9 @@
 # =============================================================================
 # tests/test_reports.py  — Playwright version
 # =============================================================================
-
 import pytest
 from locators.locators import ReportsPage as RL
 from test_data.test_data import ReportData
-
 
 class TestReports:
 

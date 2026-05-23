@@ -1,13 +1,11 @@
 # =============================================================================
 # pages/medicine_details_page.py  — Playwright version
 # =============================================================================
-
 from pages.base_page import BasePage
 from locators.locators import MedicineDetailsPage as L, URLs
 from utils.logger import get_logger
 
 logger = get_logger(__name__)
-
 
 class MedicineDetailsPage(BasePage):
 

@@ -6,7 +6,6 @@
 # Strategies: CSS selectors, XPath, role, text, label
 # =============================================================================
 
-
 class URLs:
     BASE             = "https://torejamedicalclinic.kesug.com"
     LOGIN            = "https://torejamedicalclinic.kesug.com/index.php"
@@ -20,14 +19,12 @@ class URLs:
     USERS            = "https://torejamedicalclinic.kesug.com/users.php"
     LOGOUT           = "https://torejamedicalclinic.kesug.com/logout.php"
 
-
 class LoginPage:
     USERNAME_INPUT   = "#user_name"
     PASSWORD_INPUT   = "#password"
     LOGIN_BUTTON     = "button[name='login']"
     ERROR_MESSAGE    = "p.text-danger, p[style*='color']"
     LOGO             = "#system-logo"
-
 
 class NavBar:
     TOGGLE_SIDEBAR       = "a[data-widget='pushmenu']"
@@ -51,7 +48,6 @@ class NavBar:
     LOGOUT_LINK          = "a[href='logout.php']"
     FOOTER               = "footer.main-footer"
 
-
 class DashboardPage:
     PAGE_HEADING  = "section.content-header h1"
     BOX_TODAY     = "div.small-box.bg-info"
@@ -62,7 +58,6 @@ class DashboardPage:
     COUNT_WEEK    = "div.small-box.bg-purple h3"
     COUNT_MONTH   = "div.small-box.bg-fuchsia h3"
     COUNT_YEAR    = "div.small-box.bg-maroon h3"
-
 
 class PatientsPage:
     PAGE_HEADING        = "section.content-header h1"
@@ -85,7 +80,6 @@ class PatientsPage:
     BTN_EXCEL           = "button:has(span:text('Excel'))"
     BTN_PDF             = "button:has(span:text('PDF'))"
     BTN_PRINT           = "button:has(span:text('Print'))"
-
 
 class NewPrescriptionPage:
     PAGE_HEADING        = "section.content-header h1"
@@ -116,7 +110,6 @@ class NewPrescriptionPage:
     S2_OPTION           = "li.select2-results__option"
     S2_SEARCHING        = "li.select2-results__option--disabled:has-text('Searching')"
 
-
 class PatientHistoryPage:
     PAGE_HEADING        = "section.content-header h1"
     PATIENT_SELECT      = "#patient"
@@ -128,7 +121,6 @@ class PatientHistoryPage:
     S2_OPTION           = "li.select2-results__option"
     S2_SEARCHING        = "li.select2-results__option--disabled:has-text('Searching')"
 
-
 class MedicinesPage:
     PAGE_HEADING        = "section.content-header h1"
     MEDICINE_NAME       = "#medicine_name"
@@ -136,7 +128,6 @@ class MedicinesPage:
     TABLE               = "#all_medicines"
     SEARCH_INPUT        = "#all_medicines_filter input"
     PAGE_INFO           = "#all_medicines_info"
-
 
 class MedicineDetailsPage:
     PAGE_HEADING        = "section.content-header h1"
@@ -146,7 +137,6 @@ class MedicineDetailsPage:
     TABLE               = "#medicine_details"
     SEARCH_INPUT        = "#medicine_details_filter input"
     PAGE_INFO           = "#medicine_details_info"
-
 
 class ReportsPage:
     PAGE_HEADING            = "section.content-header h1"
@@ -159,7 +149,6 @@ class ReportsPage:
     GENERATE_DISEASE_PDF    = "#print_diseases"
     VISITS_HEADING          = "h3:has-text('Patient Visits Between Two Dates')"
     DISEASE_HEADING         = "h3:has-text('Disease Based Report Between Two Dates')"
-
 
 class UsersPage:
     PAGE_HEADING        = "section.content-header h1"

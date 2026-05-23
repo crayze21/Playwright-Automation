@@ -11,7 +11,6 @@ class LoginData:
     INVALID_PASSWORD  = "wrongpass"
     EMPTY             = ""
 
-
 class PatientData:
     VALID = {
         "name":    "Test Patient Auto",
@@ -32,17 +31,14 @@ class PatientData:
         "gender":  "Female",
     }
 
-
 class MedicineData:
     VALID_NAME   = "TestMedicineAuto"
     EXISTING     = "Amoxicillin"
     EMPTY_NAME   = ""
 
-
 class MedicineDetailData:
     MEDICINE = "Losartan"
     PACKING  = "60"
-
 
 class PrescriptionData:
     PATIENT       = "Mark Cooper"
@@ -58,12 +54,10 @@ class PrescriptionData:
     QTY           = "10"
     DOSAGE        = "500mg"
 
-
 class ReportData:
     FROM_DATE     = "2026-01-01"
     TO_DATE       = "2026-12-31"
     DISEASE       = "Hypertension"
-
 
 class UserData:
     VALID = {

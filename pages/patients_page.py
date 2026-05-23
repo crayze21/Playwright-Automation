@@ -1,14 +1,12 @@
 # =============================================================================
 # pages/patients_page.py  — Playwright version
 # =============================================================================
-
 from pages.base_page import BasePage
 from locators.locators import PatientsPage as L, URLs
 from utils.logger import get_logger
 from utils.test_step import step
 
 logger = get_logger(__name__)
-
 
 class PatientsPage(BasePage):
 

@@ -1,11 +1,9 @@
 # =============================================================================
 # tests/test_medicine_details.py  — Playwright version
 # =============================================================================
-
 import pytest
 from locators.locators import MedicineDetailsPage as MDL
 from test_data.test_data import MedicineDetailData
-
 
 class TestMedicineDetails:
 

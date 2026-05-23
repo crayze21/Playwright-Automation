@@ -3,7 +3,6 @@
 # Fast sanity checks — one per module, run on every deploy
 # Run: pytest -m smoke
 # =============================================================================
-
 import pytest
 from playwright.sync_api import Page
 
@@ -18,7 +17,6 @@ from pages.reports_page import ReportsPage
 from pages.users_page import UsersPage
 from locators.locators import NavBar, URLs
 from utils.config import Config
-
 
 @pytest.mark.smoke
 class TestSmoke:

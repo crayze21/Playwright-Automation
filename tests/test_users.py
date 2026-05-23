@@ -1,7 +1,6 @@
 # =============================================================================
 # tests/test_users.py  — Playwright version
 # =============================================================================
-
 import pytest
 import uuid
 from playwright.sync_api import Page
@@ -9,7 +8,6 @@ from playwright.sync_api import Page
 from pages.users_page import UsersPage
 from locators.locators import UsersPage as UL
 from test_data.test_data import UserData
-
 
 class TestUsers:
 

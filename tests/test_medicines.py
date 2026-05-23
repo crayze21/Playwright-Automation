@@ -1,7 +1,6 @@
 # =============================================================================
 # tests/test_medicines.py  — Playwright version
 # =============================================================================
-
 import pytest
 import uuid
 from playwright.sync_api import Page
@@ -9,7 +8,6 @@ from playwright.sync_api import Page
 from pages.medicines_page import MedicinesPage
 from locators.locators import MedicinesPage as ML
 from test_data.test_data import MedicineData
-
 
 class TestMedicines:
 

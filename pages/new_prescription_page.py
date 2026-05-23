@@ -4,7 +4,6 @@
 # KEY WIN over Selenium: Select2 dropdowns work with plain .click() and .fill()
 # No JS click hacks, no spinner waits, no StaleElementException.
 # =============================================================================
-
 from playwright.sync_api import Page
 
 from pages.base_page import BasePage
@@ -13,7 +12,6 @@ from utils.logger import get_logger
 from utils.test_step import step
 
 logger = get_logger(__name__)
-
 
 class NewPrescriptionPage(BasePage):
 

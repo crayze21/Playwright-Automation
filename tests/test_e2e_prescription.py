@@ -1,7 +1,6 @@
 # =============================================================================
 # tests/test_e2e_prescription.py  — Playwright version
 # =============================================================================
-
 import pytest
 from playwright.sync_api import Page
 
@@ -16,7 +15,6 @@ from utils.test_step import step
 from utils.config import Config
 
 logger = get_logger(__name__)
-
 
 @pytest.mark.e2e
 @pytest.mark.usefixtures("e2e_page")

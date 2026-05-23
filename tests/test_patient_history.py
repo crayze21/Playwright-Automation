@@ -1,10 +1,8 @@
 # =============================================================================
 # tests/test_patient_history.py  — Playwright version
 # =============================================================================
-
 import pytest
 from locators.locators import PatientHistoryPage as L
-
 
 class TestPatientHistory:
 

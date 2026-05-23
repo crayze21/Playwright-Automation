@@ -1,7 +1,6 @@
 # =============================================================================
 # tests/test_login.py  — Playwright version
 # =============================================================================
-
 import pytest
 from playwright.sync_api import Page
 
@@ -9,7 +8,6 @@ from pages.login_page import LoginPage
 from locators.locators import URLs
 from test_data.test_data import LoginData
 from utils.config import Config
-
 
 class TestLogin:
 

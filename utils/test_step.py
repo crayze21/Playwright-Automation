@@ -1,7 +1,6 @@
 # =============================================================================
 # utils/test_step.py
 # =============================================================================
-
 import time
 import logging
 from contextlib import contextmanager
@@ -9,7 +8,6 @@ from contextlib import contextmanager
 from utils.logger import get_logger
 
 logger = get_logger("step")
-
 
 @contextmanager
 def step(description: str, level: int = logging.INFO):

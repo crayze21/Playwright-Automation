@@ -1,7 +1,6 @@
 # =============================================================================
 # pages/login_page.py  — Playwright version
 # =============================================================================
-
 from playwright.sync_api import Page
 
 from pages.base_page import BasePage
@@ -10,7 +9,6 @@ from utils.config import Config
 from utils.logger import get_logger
 
 logger = get_logger(__name__)
-
 
 class LoginPage(BasePage):
 

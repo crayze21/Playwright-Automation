@@ -6,7 +6,6 @@
 #   Playwright: pytest-playwright provides browser, context, page fixtures
 #               built-in. You just configure them here.
 # =============================================================================
-
 import os
 import pytest
 import logging
@@ -31,7 +30,6 @@ os.makedirs(Config.SCREENSHOT_DIR, exist_ok=True)
 os.makedirs(Config.REPORT_DIR,     exist_ok=True)
 os.makedirs(Config.LOG_DIR,        exist_ok=True)
 
-
 # =============================================================================
 # PLAYWRIGHT BROWSER CONFIGURATION
 # These hook into pytest-playwright's built-in fixture system
@@ -40,7 +38,6 @@ os.makedirs(Config.LOG_DIR,        exist_ok=True)
 def pytest_configure(config):
     """Set Playwright browser options via pytest-playwright."""
     pass
-
 
 @pytest.fixture(scope="session")
 def browser_type_launch_args():
@@ -57,7 +54,6 @@ def browser_type_launch_args():
         ]
     }
 
-
 @pytest.fixture(scope="session")
 def browser_context_args(browser_type_launch_args):
     """
@@ -68,7 +64,6 @@ def browser_context_args(browser_type_launch_args):
         "viewport":            {"width": 1280, "height": 900},
         "ignore_https_errors": True,
     }
-
 
 # =============================================================================
 # PAGE FIXTURE — base authenticated page
@@ -103,7 +98,6 @@ def auth_page(page: Page) -> Page:
     page.wait_for_url("**/dashboard.php", timeout=Config.TIMEOUT)
     logger.info("Logged in as admin — dashboard reached")
     return page
-
 
 # =============================================================================
 # E2E FIXTURE — class-scoped single session
@@ -144,7 +138,6 @@ def e2e_page(browser: Browser) -> Page:
 
     context.close()
     logger.info("E2E browser session closed")
-
 
 # =============================================================================
 # PAGE OBJECT FIXTURES
@@ -201,7 +194,6 @@ def users_page(auth_page: Page):
     p.open()
     return p
 
-
 # =============================================================================
 # AUTO-SCREENSHOT ON FAILURE
 # Playwright version — much simpler than Selenium
@@ -251,7 +243,6 @@ def pytest_runtest_makereport(item, call):
         pass
 
     logger.error(f"Failure URL: {page.url}")
-
 
 def pytest_runtest_logreport(report):
     if report.when == "call":

@@ -2,7 +2,6 @@
 # tests/test_functional.py  — Playwright version
 # Per-module feature coverage — run daily: pytest -m functional
 # =============================================================================
-
 import pytest
 import uuid
 from playwright.sync_api import Page
@@ -23,10 +22,8 @@ from test_data.test_data import (
 )
 from utils.config import Config
 
-
 def unique(prefix: str) -> str:
     return f"{prefix}_{uuid.uuid4().hex[:6].upper()}"
-
 
 # ==============================================================================
 # LOGIN
@@ -71,7 +68,6 @@ class TestFunctionalLogin:
                        timeout=Config.TIMEOUT)
         auth_page.wait_for_url("**/index.php", timeout=Config.TIMEOUT)
         assert "index.php" in auth_page.url or auth_page.url.endswith("/")
-
 
 # ==============================================================================
 # PATIENTS
@@ -119,7 +115,6 @@ class TestFunctionalPatients:
             assert patients_page.page.locator(locator).is_visible(), \
                 f"'{label}' button should be visible"
 
-
 # ==============================================================================
 # MEDICINES
 # ==============================================================================
@@ -148,7 +143,6 @@ class TestFunctionalMedicines:
             medicines_page.search_medicine(name)
             medicines_page.page.wait_for_timeout(400)
             assert medicines_page.is_medicine_in_table(name)
-
 
 # ==============================================================================
 # MEDICINE DETAILS
@@ -182,7 +176,6 @@ class TestFunctionalMedicineDetails:
         ).all_text_contents()
         assert any("Amoxicillin" in o for o in options)
 
-
 # ==============================================================================
 # PATIENT HISTORY
 # ==============================================================================
@@ -210,7 +203,6 @@ class TestFunctionalPatientHistory:
             ).text_content()
             assert col.lower() in text.lower()
 
-
 # ==============================================================================
 # REPORTS
 # ==============================================================================
@@ -235,7 +227,6 @@ class TestFunctionalReports:
             ("To date", RL.DISEASE_TO), ("Generate PDF", RL.GENERATE_DISEASE_PDF),
         ]:
             assert reports_page.page.locator(locator).is_visible()
-
 
 # ==============================================================================
 # USERS

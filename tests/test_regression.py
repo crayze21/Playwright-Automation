@@ -2,7 +2,6 @@
 # tests/test_regression.py  — Playwright version
 # Edge cases and boundary conditions — run before releases: pytest -m regression
 # =============================================================================
-
 import pytest
 import uuid
 from playwright.sync_api import Page
@@ -14,10 +13,8 @@ from pages.dashboard_page import DashboardPage
 from locators.locators import URLs
 from utils.config import Config
 
-
 def unique(prefix):
     return f"{prefix}_{uuid.uuid4().hex[:6].upper()}"
-
 
 # ==============================================================================
 # SESSION & SECURITY
@@ -56,7 +53,6 @@ class TestRegressionSession:
         page.set_default_timeout(Config.TIMEOUT)
         page.goto(URLs.LOGIN, wait_until="domcontentloaded", timeout=Config.TIMEOUT)
         assert "Toreja" in page.title() or "Clinic" in page.title()
-
 
 # ==============================================================================
 # PATIENTS — EDGE CASES
@@ -109,7 +105,6 @@ class TestRegressionPatients:
             assert expected in options, \
                 f"Gender option '{expected}' must be present"
 
-
 # ==============================================================================
 # MEDICINES — EDGE CASES
 # ==============================================================================
@@ -139,7 +134,6 @@ class TestRegressionMedicines:
         assert medicines_page.get_row_count() >= 2, \
             "Searching 'Anti' should match Antibiotic and Antihistamine"
 
-
 # ==============================================================================
 # PRESCRIPTION — EDGE CASES
 # ==============================================================================
@@ -168,7 +162,6 @@ class TestRegressionPrescription:
         new_prescription_page.delete_medicine_row(count_before)
         new_prescription_page.page.wait_for_timeout(300)
         assert new_prescription_page.get_row_count() == count_before - 1
-
 
 # ==============================================================================
 # NAVIGATION — REGRESSION

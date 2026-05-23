@@ -1,7 +1,6 @@
 # =============================================================================
 # utils/logger.py
 # =============================================================================
-
 import logging
 import os
 import sys
@@ -9,7 +8,6 @@ from datetime import datetime
 from logging.handlers import RotatingFileHandler
 
 from utils.config import Config
-
 
 class _Colours:
     RESET   = "\033[0m"
@@ -27,7 +25,6 @@ class _Colours:
         "CRITICAL": MAGENTA + BOLD,
     }
 
-
 class _ColouredFormatter(logging.Formatter):
     FMT  = "%(asctime)s  %(levelname)-8s  %(name)s  %(message)s"
     DATE = "%H:%M:%S"
@@ -37,12 +34,10 @@ class _ColouredFormatter(logging.Formatter):
         record.levelname = f"{colour}{record.levelname}{_Colours.RESET}"
         return logging.Formatter(self.FMT, datefmt=self.DATE).format(record)
 
-
 class _PlainFormatter(logging.Formatter):
     FMT  = "%(asctime)s  %(levelname)-8s  %(name)-30s  %(message)s"
     DATE = "%Y-%m-%d %H:%M:%S"
     def __init__(self): super().__init__(fmt=self.FMT, datefmt=self.DATE)
-
 
 def _build_root_logger():
     root = logging.getLogger("pms_pw")
@@ -66,9 +61,7 @@ def _build_root_logger():
     root.addHandler(file_handler)
     return root
 
-
 _ROOT_LOGGER = _build_root_logger()
-
 
 def get_logger(name: str) -> logging.Logger:
     return _ROOT_LOGGER.getChild(name)

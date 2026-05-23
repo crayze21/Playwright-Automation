@@ -1,7 +1,6 @@
 # =============================================================================
 # tests/test_patients.py  — Playwright version
 # =============================================================================
-
 import pytest
 import uuid
 from playwright.sync_api import Page
@@ -10,7 +9,6 @@ from pages.patients_page import PatientsPage
 from locators.locators import PatientsPage as PL
 from test_data.test_data import PatientData
 from utils.config import Config
-
 
 class TestPatients:
 

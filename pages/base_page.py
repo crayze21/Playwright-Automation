@@ -5,7 +5,6 @@
 #   Selenium: driver.find_element(By.ID, "x").click()
 #   Playwright: page.locator("#x").click()   ← auto-waits, no WebDriverWait needed
 # =============================================================================
-
 import time
 import logging
 from playwright.sync_api import Page, expect
@@ -15,7 +14,6 @@ from utils.config import Config
 from utils.logger import get_logger
 
 logger = get_logger(__name__)
-
 
 class BasePage:
     """

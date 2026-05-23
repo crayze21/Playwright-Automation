@@ -1,11 +1,9 @@
 # =============================================================================
 # tests/test_new_prescription.py  — Playwright version
 # =============================================================================
-
 import pytest
 from locators.locators import NewPrescriptionPage as L
 from test_data.test_data import PrescriptionData
-
 
 class TestNewPrescription:
 

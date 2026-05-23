@@ -1,10 +1,8 @@
 # =============================================================================
 # tests/test_dashboard.py  — Playwright version
 # =============================================================================
-
 import pytest
 from locators.locators import NavBar
-
 
 class TestDashboard:
 
