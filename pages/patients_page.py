@@ -55,8 +55,7 @@ class PatientsPage(BasePage):
 
     # ── Bulk convenience method with step logging ──────────────────────────────
 
-    def add_patient(self, name: str, address: str, cnic: str,
-                    dob: str, phone: str, gender: str) -> None:
+    def add_patient(self, name: str, address: str, cnic: str, dob: str, phone: str, gender: str) -> None:
         logger.info(f"Adding patient: {name}")
         with step("Enter patient name"):
             self.page.locator(L.PATIENT_NAME).fill(name)

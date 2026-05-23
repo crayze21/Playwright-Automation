@@ -8,17 +8,17 @@
 
 
 class URLs:
-    BASE             = "http://torejamedicalclinic.wuaze.com"
-    LOGIN            = "http://torejamedicalclinic.wuaze.com/index.php"
-    DASHBOARD        = "http://torejamedicalclinic.wuaze.com/dashboard.php"
-    NEW_PRESCRIPTION = "http://torejamedicalclinic.wuaze.com/new_prescription.php"
-    PATIENTS         = "http://torejamedicalclinic.wuaze.com/patients.php"
-    PATIENT_HISTORY  = "http://torejamedicalclinic.wuaze.com/patient_history.php"
-    MEDICINES        = "http://torejamedicalclinic.wuaze.com/medicines.php"
-    MEDICINE_DETAILS = "http://torejamedicalclinic.wuaze.com/medicine_details.php"
-    REPORTS          = "http://torejamedicalclinic.wuaze.com/reports.php"
-    USERS            = "http://torejamedicalclinic.wuaze.com/users.php"
-    LOGOUT           = "http://torejamedicalclinic.wuaze.com/logout.php"
+    BASE             = "https://torejamedicalclinic.kesug.com"
+    LOGIN            = "https://torejamedicalclinic.kesug.com/index.php"
+    DASHBOARD        = "https://torejamedicalclinic.kesug.com/dashboard.php"
+    NEW_PRESCRIPTION = "https://torejamedicalclinic.kesug.com/new_prescription.php"
+    PATIENTS         = "https://torejamedicalclinic.kesug.com/patients.php"
+    PATIENT_HISTORY  = "https://torejamedicalclinic.kesug.com/patient_history.php"
+    MEDICINES        = "https://torejamedicalclinic.kesug.com/medicines.php"
+    MEDICINE_DETAILS = "https://torejamedicalclinic.kesug.com/medicine_details.php"
+    REPORTS          = "https://torejamedicalclinic.kesug.com/reports.php"
+    USERS            = "https://torejamedicalclinic.kesug.com/users.php"
+    LOGOUT           = "https://torejamedicalclinic.kesug.com/logout.php"
 
 
 class LoginPage:
@@ -69,7 +69,7 @@ class PatientsPage:
     PATIENT_NAME        = "#patient_name"
     ADDRESS             = "#address"
     CNIC                = "#cnic"
-    DATE_OF_BIRTH       = "[name='date_of_birth']"
+    DATE_OF_BIRTH       = "input[name='date_of_birth']"
     PHONE_NUMBER        = "#phone_number"
     GENDER              = "#gender"
     SAVE_BTN            = "#save_Patient"
