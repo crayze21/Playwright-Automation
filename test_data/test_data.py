@@ -38,7 +38,7 @@ class MedicineData:
 
 class MedicineDetailData:
     MEDICINE = "Losartan"
-    PACKING  = "60"
+    PACKING  = "50"
 
 class PrescriptionData:
     PATIENT       = "Mark Cooper"
@@ -99,12 +99,12 @@ class E2EData:
         uid = uuid.uuid4().hex[:6].upper()
         return f"E2EMed{uid}"
 
-    VISIT_DATE      = "23/05/2026"
-    NEXT_VISIT_DATE = "23/06/2026"
+    VISIT_DATE      = "2026-04-23"
+    NEXT_VISIT_DATE = "2026-05-07"
     BP              = "120/80"
     WEIGHT          = "68"
     DISEASE         = "E2E Hypertension"
-    FREQUENCY       = "1-0-1 (M-N)"
-    TIMING          = "After Meal"
+    FREQUENCY       = "1-1-1 (M-A-N)"
+    TIMING          = "With Meal"
     QTY             = "10"
     DOSAGE          = "500mg"

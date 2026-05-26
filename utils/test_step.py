@@ -4,13 +4,14 @@
 import time
 import logging
 from contextlib import contextmanager
+from typing import Any, Generator
 
 from utils.logger import get_logger
 
 logger = get_logger("step")
 
 @contextmanager
-def step(description: str, level: int = logging.INFO):
+def step(description: str, level: int = logging.INFO) -> Generator[None, Any, None]:
     start = time.time()
     logger.log(level, f"┌─ {description}")
     try:

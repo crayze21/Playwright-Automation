@@ -36,7 +36,10 @@ class PatientsPage(BasePage):
         return self
 
     def enter_date_of_birth(self, dob: str) -> "PatientsPage":
-        """Set DOB via JS — bypasses custom date picker."""
+        """
+        Set date of birth using the app's DD/MM/YYYY format.
+        Example: '15/06/1995'
+        """
         self.set_date(L.DATE_OF_BIRTH, dob)
         return self
 
@@ -61,7 +64,7 @@ class PatientsPage(BasePage):
             self.page.locator(L.ADDRESS).fill(address)
         with step("Enter CNIC"):
             self.page.locator(L.CNIC).fill(cnic)
-        with step("Set date of birth"):
+        with step("Set date of birth (DD/MM/YYYY)"):
             self.page.locator(L.DATE_OF_BIRTH).fill(dob)
         with step("Enter phone number"):
             self.page.locator(L.PHONE_NUMBER).fill(phone)

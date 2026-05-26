@@ -32,6 +32,7 @@ class ReportsPage(BasePage):
         self.page.locator(L.GENERATE_VISITS_PDF).click()
 
     def generate_visits_report(self, from_date: str, to_date: str) -> None:
+        """from_date and to_date must be DD/MM/YYYY — e.g. '01/01/2026'"""
         self.set_visits_from_date(from_date)
         self.set_visits_to_date(to_date)
         self.click_generate_visits_pdf()

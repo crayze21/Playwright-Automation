@@ -78,39 +78,46 @@ class NewPrescriptionPage(BasePage):
                           frequency: str, timing: str,
                           qty: str, dosage: str) -> None:
         """
-        Fill a medicine row — Playwright version.
-        No JS click needed for Select2. No StaleElementException.
+        Fill a medicine row — all locators scoped to the specific row.
         row_index is 1-based.
         """
+        # Get the specific row
         row = self.page.locator(f"{L.MEDICATION_TBODY} tr").nth(row_index - 1)
 
-        # Select2 — click the trigger inside this specific row
+        # Step 1 — click the Select2 trigger inside this row
         row.locator(".select2-selection").click()
 
-        # Type in the global Select2 search input
-        search = self.page.locator(L.MEDICINE_SEARCH)
-        search.wait_for(state="visible", timeout=self.timeout)
+        # Step 2 — use .last to get the currently active/open search box
+        # Both rows render a search input but only the active one is visible
+        # .last targets the most recently opened Select2 search input
+        search = self.page.locator(
+            "input.select2-search__field:visible"
+        ).last
         search.fill(medicine)
 
-        # Wait for and click the matching option
+        # Step 3 — wait for and click the matching option
         option = self.page.locator(
-            f"li.select2-results__option:not(.select2-results__option--disabled)"
+            f"li.select2-results__option"
+            f":not(.select2-results__option--disabled)"
             f":has-text('{medicine}')"
-        )
-        option.first.wait_for(state="visible", timeout=self.timeout)
-        option.first.click()
+        ).first
+        option.wait_for(state="visible", timeout=self.timeout)
+        option.click()
         logger.info(f"Medicine selected: {medicine}")
 
-        # Frequency — native <select>
-        row.locator("select").nth(0).select_option(label=frequency)
+        # Step 4 — re-fetch row after Select2 closes (DOM update)
+        row = self.page.locator(f"{L.MEDICATION_TBODY} tr").nth(row_index - 1)
 
-        # Timing — native <select>
-        row.locator("select").nth(1).select_option(label=timing)
+        # Step 5 — Frequency (first native select in this row)
+        row.locator("[name='frequency[]']").nth(0).select_option(label=frequency)
 
-        # QTY
+        # Step 6 — Timing (second native select in this row)
+        row.locator("[name='timing[]']").nth(0).select_option(label=timing)
+
+        # Step 7 — QTY scoped to this row
         row.locator("[name='qty[]']").fill(qty)
 
-        # Dosage
+        # Step 8 — Dosage scoped to this row
         row.locator("[name='dosage[]']").fill(dosage)
 
         logger.info(

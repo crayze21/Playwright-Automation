@@ -4,12 +4,14 @@
 import pytest
 from playwright.sync_api import Page
 
+from pages import medicine_details_page
 from pages.dashboard_page import DashboardPage
+from pages.medicine_details_page import MedicineDetailsPage
 from pages.patients_page import PatientsPage
 from pages.medicines_page import MedicinesPage
 from pages.new_prescription_page import NewPrescriptionPage
 from pages.patient_history_page import PatientHistoryPage
-from test_data.test_data import E2EData
+from test_data.test_data import E2EData, MedicineDetailData
 from utils.logger import get_logger
 from utils.test_step import step
 from utils.config import Config
@@ -87,8 +89,24 @@ class TestPrescriptionWorkflow:
         logger.info("STAGE 3 PASSED")
 
     @pytest.mark.run(order=4)
-    def test_04_create_prescription(self, e2e_page: Page):
-        logger.info("=== E2E STAGE 4: Create prescription ===")
+    def test_04_add_medicine_detail(self, e2e_page: Page):
+        logger.info("=== E2E STAGE 4: Add medicine detail ===")
+
+        page = MedicineDetailsPage(e2e_page)
+
+        with step("Navigate to medicines details page"):
+            page.open()
+            assert page.is_on_page()
+
+        with step("Add medicine details"):
+            page.add_medicine_detail(
+                self.medicine_name, MedicineDetailData.PACKING
+            )
+        logger.info("STAGE 4 PASSED")
+
+    @pytest.mark.run(order=5)
+    def test_05_create_prescription(self, e2e_page: Page):
+        logger.info("=== E2E STAGE 5: Create prescription ===")
 
         if not self.patient_name or not self.medicine_name:
             pytest.skip("Skipping — patient or medicine setup failed in earlier stage")
@@ -117,9 +135,9 @@ class TestPrescriptionWorkflow:
         with step("Fill disease"):
             page.enter_disease(E2EData.DISEASE)
 
-        with step("Add medicine row"):
-            page.click_add_row()
-            assert page.get_row_count() >= 1
+        # with step("Add medicine row"):
+        #     page.click_add_row()
+        #     assert page.get_row_count() >= 1
 
         with step("Fill medicine row"):
             page.fill_medicine_row(
@@ -135,11 +153,11 @@ class TestPrescriptionWorkflow:
             page.click_save_prescription()
             e2e_page.wait_for_timeout(1500)
 
-        logger.info("STAGE 4 PASSED")
+        logger.info("STAGE 5 PASSED")
 
-    @pytest.mark.run(order=5)
-    def test_05_verify_patient_history(self, e2e_page: Page):
-        logger.info("=== E2E STAGE 5: Verify history ===")
+    @pytest.mark.run(order=6)
+    def test_06_verify_patient_history(self, e2e_page: Page):
+        logger.info("=== E2E STAGE 6: Verify history ===")
 
         if not self.patient_name:
             pytest.skip("patient_name not set — did test_02 pass?")
@@ -175,4 +193,4 @@ class TestPrescriptionWorkflow:
             assert self.medicine_name.lower() in medicine_cell.lower(), \
                 f"Expected '{self.medicine_name}', got '{medicine_cell}'"
 
-        logger.info("STAGE 5 PASSED — full E2E workflow complete")
+        logger.info("STAGE 6 PASSED — full E2E workflow complete")

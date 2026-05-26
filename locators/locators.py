@@ -98,7 +98,7 @@ class NewPrescriptionPage:
     ADD_ROW_BTN         = "#add_row"
     MEDICATION_TBODY    = "#medication_list"
 
-    MEDICINE_SEARCH     = "[name='medicine[]']"
+    MEDICINE_SEARCH     = "input[placeholder='Type Medicine...']"
     FREQUENCY_SELECT    = "[name='frequency[]']"
     TIMING_SELECT       = "[name='timing[]']"
     QTY_INPUT           = "[name='qty[]']"

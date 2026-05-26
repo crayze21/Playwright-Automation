@@ -21,7 +21,28 @@ class MedicineDetailsPage(BasePage):
         return self.page.locator(L.PAGE_HEADING).text_content()
 
     def select_medicine(self, medicine_name: str) -> "MedicineDetailsPage":
-        self.page.locator(L.MEDICINE_SELECT).select_option(label=medicine_name)
+        dropdown = self.page.locator(L.MEDICINE_SELECT)
+
+        options = dropdown.locator("option").all_text_contents()
+
+        logger.info(f"Dropdown options: {options}")
+        logger.info(f"Looking for medicine: {medicine_name}")
+
+        matched_option = next(
+            (
+                option
+                for option in options
+                if option.strip().lower() == medicine_name.strip().lower()
+            ),
+            None,
+        )
+
+        assert matched_option, (
+            f"Medicine '{medicine_name}' not found in dropdown"
+        )
+
+        dropdown.select_option(label=matched_option)
+        # self.page.locator(L.MEDICINE_SELECT).select_option(label=medicine_name)
         return self
 
     def enter_packing(self, packing: str) -> "MedicineDetailsPage":

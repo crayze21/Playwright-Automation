@@ -65,7 +65,7 @@ class TestRegressionPatients:
         page = PatientsPage(auth_page)
         page.open()
         name = f"O'Brien-{uuid.uuid4().hex[:4].upper()}"
-        page.add_patient(name, "Test St", "REG001", "1985-03-10", "09170000001", "Male")
+        page.add_patient(name, "Test St", "REG001", "10/03/1985", "09170000001", "Male")
         auth_page.wait_for_load_state("domcontentloaded")
         # Check partial match — apostrophe may be encoded differently
         assert page.is_patient_in_table("O'Brien") or \
@@ -143,7 +143,7 @@ class TestRegressionPrescription:
 
     def test_save_without_patient_stays_on_page(self, new_prescription_page):
         new_prescription_page.enter_disease("Regression Test Disease")
-        new_prescription_page.set_visit_date("2026-04-23")
+        new_prescription_page.set_visit_date("23/04/2026")
         new_prescription_page.click_save_prescription()
         assert new_prescription_page.is_on_page()
 

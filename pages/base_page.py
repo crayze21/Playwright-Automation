@@ -81,11 +81,29 @@ class BasePage:
         logger.info(f"Select2 option selected: {option_text}")
 
     def set_date(self, selector: str, date_value: str) -> None:
-        """Set date input value via JavaScript — bypasses custom date pickers."""
+        """
+        Set a native <input type='date'> field via JavaScript.
+        date_value MUST be in YYYY-MM-DD format — e.g. '2026-04-23'
+        The browser will display it as dd/mm/yyyy automatically.
+
+        We use JS because Playwright's fill() rejects DD/MM/YYYY as
+        'Malformed value' on native date inputs — they always store YYYY-MM-DD.
+        """
         self.page.evaluate(
-            f"document.querySelector('{selector}').value = '{date_value}';"
-            f"document.querySelector('{selector}').dispatchEvent(new Event('change'));"
+            """([selector, value]) => {
+                const el = document.querySelector(selector);
+                if (el) {
+                    const nativeInputValueSetter = Object.getOwnPropertyDescriptor(
+                        window.HTMLInputElement.prototype, 'value'
+                    ).set;
+                    nativeInputValueSetter.call(el, value);
+                    el.dispatchEvent(new Event('input', {bubbles: true}));
+                    el.dispatchEvent(new Event('change', {bubbles: true}));
+                }
+            }""",
+            [selector, date_value]
         )
+        logger.debug(f"Date set via JS: {date_value} → {selector}")
 
     # ── Sidebar navigation ─────────────────────────────────────────────────────
 
