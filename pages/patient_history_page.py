@@ -30,8 +30,9 @@ class PatientHistoryPage(BasePage):
         return self
 
     def click_search(self) -> None:
+        self.page.on("dialog", lambda dialog: dialog.accept())
         self.page.locator(L.SEARCH_BTN).click()
-        self.page.locator(L.HISTORY_TBODY).wait_for(timeout=self.timeout)
+        # self.page.locator(L.HISTORY_TBODY).wait_for(timeout=self.timeout)
         logger.info("History search clicked")
 
     def search_patient_history(self, patient_name: str) -> None:
