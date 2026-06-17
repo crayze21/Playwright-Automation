@@ -1,0 +1,17 @@
+2026-05-28 19:48:37  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-05-28 19:48:39  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-05-28 19:48:44  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-05-28 19:48:47  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-05-28 19:48:47  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_dashboard.py::TestDashboard::test_dashboard_loads_after_login[chromium]  (0.02s)
+2026-05-28 19:48:47  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-05-28 19:48:49  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-05-28 19:48:55  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-05-28 19:48:57  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-05-28 19:48:57  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_dashboard.py::TestDashboard::test_today_patients_stat_box_visible[chromium]  (0.02s)
+2026-05-28 19:48:57  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-05-28 19:48:59  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-05-28 19:49:05  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-05-28 19:49:06  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-05-28 19:49:06  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_dashboard.py::TestDashboard::test_current_week_stat_box_visible[chromium]  (0.02s)
+2026-05-28 19:49:07  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-05-28 19:49:08  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php

@@ -228,7 +228,7 @@ def pytest_runtest_makereport(item, call):
         page.screenshot(path=screenshot_path, full_page=True)
         logger.warning(f"Screenshot saved: {screenshot_path}")
     except Exception as e:
-        logger.error(f"Could not save screenshot: {e}")
+        logger.error(f"Could not save screenshot: {e}")  
 
     # Attach to HTML report
     try:

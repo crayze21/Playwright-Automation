@@ -1,0 +1,253 @@
+2026-06-05 16:24:50  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:24:52  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:25:19  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:25:23  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalLogin::test_valid_credentials_redirect_to_dashboard[chromium]  (33.45s)
+2026-06-05 16:25:23  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:25:26  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:25:39  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: wronguser
+2026-06-05 16:25:39  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalLogin::test_invalid_username_shows_error[chromium]  (15.62s)
+2026-06-05 16:25:39  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:25:41  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:25:56  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:25:56  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalLogin::test_invalid_password_shows_error[chromium]  (16.95s)
+2026-06-05 16:25:56  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:25:58  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:26:10  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: 
+2026-06-05 16:26:10  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalLogin::test_empty_username_prevented[chromium]  (13.82s)
+2026-06-05 16:26:10  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:26:12  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:26:21  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:26:21  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalLogin::test_empty_password_prevented[chromium]  (10.94s)
+2026-06-05 16:26:21  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:26:23  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:26:32  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:26:35  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:26:36  [96mINFO[0m  pms_pw.pages.base_page          Logged out
+2026-06-05 16:27:36  [93mWARNING[0m  pms_pw.conftest                 Screenshot saved: C:\Users\eugene\PycharmProjects\Playwright-Automation\screenshots\FAIL_tests_test_functional.py_TestFunctionalLogin_test_logout_ends_session[chromium]_20260605_162736.png
+2026-06-05 16:27:36  [91mERROR[0m  pms_pw.conftest                 Failure URL: https://torejamedicalclinic.kesug.com/dashboard.php
+2026-06-05 16:27:36  [96mINFO[0m  pms_pw.conftest                 FAIL  tests/test_functional.py::TestFunctionalLogin::test_logout_ends_session[chromium]  (61.21s)
+2026-06-05 16:27:36  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:27:38  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:27:51  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:27:53  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:27:53  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patients.php  (attempt 1/3)
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patients.php
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.pages.patients_page      Adding patient: FuncPatient_E9979D
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     ┌─ Enter patient name
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter patient name  (0.01s)
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     ┌─ Enter address
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter address  (0.01s)
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     ┌─ Enter CNIC
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter CNIC  (0.01s)
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     ┌─ Set date of birth (DD/MM/YYYY)
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     └─ PASS  Set date of birth (DD/MM/YYYY)  (0.01s)
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     ┌─ Enter phone number
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter phone number  (0.01s)
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     ┌─ Select gender
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     └─ PASS  Select gender  (0.01s)
+2026-06-05 16:28:02  [96mINFO[0m  pms_pw.step                     ┌─ Click Save button
+2026-06-05 16:28:03  [96mINFO[0m  pms_pw.step                     └─ PASS  Click Save button  (0.99s)
+2026-06-05 16:28:04  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalPatients::test_add_patient_valid_data_appears_in_table[chromium]  (10.61s)
+2026-06-05 16:28:04  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:28:06  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:28:16  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:28:19  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:28:19  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patients.php  (attempt 1/3)
+2026-06-05 16:28:30  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patients.php
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.pages.patients_page      Adding patient: 
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     ┌─ Enter patient name
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter patient name  (0.01s)
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     ┌─ Enter address
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter address  (0.01s)
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     ┌─ Enter CNIC
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter CNIC  (0.01s)
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     ┌─ Set date of birth (DD/MM/YYYY)
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     └─ PASS  Set date of birth (DD/MM/YYYY)  (0.01s)
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     ┌─ Enter phone number
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter phone number  (0.01s)
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     ┌─ Select gender
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     └─ PASS  Select gender  (0.01s)
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     ┌─ Click Save button
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.step                     └─ PASS  Click Save button  (0.04s)
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalPatients::test_add_patient_empty_name_stays_on_page[chromium]  (0.10s)
+2026-06-05 16:28:31  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:28:33  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:28:39  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:28:41  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:28:41  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patients.php  (attempt 1/3)
+2026-06-05 16:28:50  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patients.php
+2026-06-05 16:28:50  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalPatients::test_patient_table_has_all_columns[chromium]  (0.03s)
+2026-06-05 16:28:50  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:28:52  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:28:57  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:28:59  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:28:59  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patients.php  (attempt 1/3)
+2026-06-05 16:29:03  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patients.php
+2026-06-05 16:29:05  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalPatients::test_search_filters_to_matching_patient[chromium]  (1.56s)
+2026-06-05 16:29:05  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:29:07  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:29:16  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:29:19  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:29:19  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patients.php  (attempt 1/3)
+2026-06-05 16:29:26  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patients.php
+2026-06-05 16:29:28  [93mWARNING[0m  pms_pw.conftest                 Screenshot saved: C:\Users\eugene\PycharmProjects\Playwright-Automation\screenshots\FAIL_tests_test_functional.py_TestFunctionalPatients_test_search_nonexistent_returns_zero_rows[chromium]_20260605_162927.png
+2026-06-05 16:29:28  [91mERROR[0m  pms_pw.conftest                 Failure URL: https://torejamedicalclinic.kesug.com/patients.php
+2026-06-05 16:29:28  [96mINFO[0m  pms_pw.conftest                 FAIL  tests/test_functional.py::TestFunctionalPatients::test_search_nonexistent_returns_zero_rows[chromium]  (1.04s)
+2026-06-05 16:29:28  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:29:30  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:29:43  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:29:46  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:29:46  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patients.php  (attempt 1/3)
+2026-06-05 16:29:53  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patients.php
+2026-06-05 16:29:53  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalPatients::test_all_export_buttons_visible[chromium]  (0.02s)
+2026-06-05 16:29:53  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:29:55  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:30:05  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:30:08  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:30:08  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/medicines.php  (attempt 1/3)
+2026-06-05 16:30:16  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/medicines.php
+2026-06-05 16:30:16  [96mINFO[0m  pms_pw.pages.medicines_page     Adding medicine: FuncMed_F68931
+2026-06-05 16:30:16  [96mINFO[0m  pms_pw.step                     ┌─ Enter medicine name
+2026-06-05 16:30:16  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter medicine name  (0.01s)
+2026-06-05 16:30:16  [96mINFO[0m  pms_pw.step                     ┌─ Click Save
+2026-06-05 16:30:18  [96mINFO[0m  pms_pw.step                     └─ PASS  Click Save  (1.44s)
+2026-06-05 16:30:19  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalMedicines::test_add_medicine_valid_name_appears_in_table[chromium]  (10.29s)
+2026-06-05 16:30:19  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:30:21  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:30:42  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:30:47  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:30:47  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/medicines.php  (attempt 1/3)
+2026-06-05 16:31:03  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/medicines.php
+2026-06-05 16:31:03  [96mINFO[0m  pms_pw.pages.medicines_page     Adding medicine: 
+2026-06-05 16:31:03  [96mINFO[0m  pms_pw.step                     ┌─ Enter medicine name
+2026-06-05 16:31:03  [96mINFO[0m  pms_pw.step                     └─ PASS  Enter medicine name  (0.01s)
+2026-06-05 16:31:03  [96mINFO[0m  pms_pw.step                     ┌─ Click Save
+2026-06-05 16:31:03  [96mINFO[0m  pms_pw.step                     └─ PASS  Click Save  (0.04s)
+2026-06-05 16:31:03  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalMedicines::test_add_medicine_empty_name_stays_on_page[chromium]  (0.06s)
+2026-06-05 16:31:03  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:31:06  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:31:14  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:31:16  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:31:16  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/medicines.php  (attempt 1/3)
+2026-06-05 16:31:25  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/medicines.php
+2026-06-05 16:31:27  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalMedicines::test_search_filters_medicines[chromium]  (1.55s)
+2026-06-05 16:31:27  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:31:29  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:31:40  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:31:41  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:31:41  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/medicines.php  (attempt 1/3)
+2026-06-05 16:31:50  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/medicines.php
+2026-06-05 16:31:56  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalMedicines::test_seeded_medicines_are_in_table[chromium]  (5.87s)
+2026-06-05 16:31:56  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:31:58  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:32:05  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:32:07  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:32:07  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/medicine_details.php  (attempt 1/3)
+2026-06-05 16:32:12  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/medicine_details.php
+2026-06-05 16:32:12  [96mINFO[0m  pms_pw.pages.medicine_details_page  Dropdown options: ['Select Medicine', 'Amoxicillin', 'Antacids', 'Antibiotic', 'Antihistamine', 'Atorvastatin', 'E2emed32718d', 'E2emed885237', 'Funcmed_f68931', 'Losartan', 'Med500mg_f800', 'Mefenamic', 'Oxymetazoline']
+2026-06-05 16:32:12  [96mINFO[0m  pms_pw.pages.medicine_details_page  Looking for medicine: Losartan
+2026-06-05 16:32:14  [96mINFO[0m  pms_pw.pages.medicine_details_page  Medicine detail added: Losartan / packing: 50
+2026-06-05 16:32:14  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalMedicineDetails::test_add_medicine_detail_valid_data[chromium]  (1.49s)
+2026-06-05 16:32:14  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:32:16  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:32:27  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:32:29  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:32:29  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/medicine_details.php  (attempt 1/3)
+2026-06-05 16:32:45  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/medicine_details.php
+2026-06-05 16:32:45  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalMedicineDetails::test_medicine_details_table_columns[chromium]  (0.02s)
+2026-06-05 16:32:45  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:32:47  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:32:55  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:32:56  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:32:56  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/medicine_details.php  (attempt 1/3)
+2026-06-05 16:33:07  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/medicine_details.php
+2026-06-05 16:33:08  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalMedicineDetails::test_search_filters_medicine_details[chromium]  (1.04s)
+2026-06-05 16:33:08  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:33:10  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:33:16  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:33:19  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:33:19  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/medicine_details.php  (attempt 1/3)
+2026-06-05 16:33:23  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/medicine_details.php
+2026-06-05 16:33:23  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalMedicineDetails::test_medicine_dropdown_contains_seeded_options[chromium]  (0.01s)
+2026-06-05 16:33:23  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:33:25  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:33:32  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:33:33  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:33:33  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patient_history.php  (attempt 1/3)
+2026-06-05 16:33:34  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patient_history.php
+2026-06-05 16:33:34  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalPatientHistory::test_page_loads_with_search_form[chromium]  (0.01s)
+2026-06-05 16:33:34  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:33:36  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:33:45  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:33:47  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:33:47  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patient_history.php  (attempt 1/3)
+2026-06-05 16:33:47  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patient_history.php
+2026-06-05 16:34:47  [93mWARNING[0m  pms_pw.conftest                 Screenshot saved: C:\Users\eugene\PycharmProjects\Playwright-Automation\screenshots\FAIL_tests_test_functional.py_TestFunctionalPatientHistory_test_search_without_patient_stays_on_page[chromium]_20260605_163447.png
+2026-06-05 16:34:47  [91mERROR[0m  pms_pw.conftest                 Failure URL: https://torejamedicalclinic.kesug.com/patient_history.php
+2026-06-05 16:34:47  [96mINFO[0m  pms_pw.conftest                 FAIL  tests/test_functional.py::TestFunctionalPatientHistory::test_search_without_patient_stays_on_page[chromium]  (60.05s)
+2026-06-05 16:34:47  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:34:49  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:34:56  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:34:57  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:34:57  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patient_history.php  (attempt 1/3)
+2026-06-05 16:34:58  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patient_history.php
+2026-06-05 16:34:58  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalPatientHistory::test_history_table_has_all_columns[chromium]  (0.03s)
+2026-06-05 16:34:58  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:35:00  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:35:10  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:35:13  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:35:13  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/reports.php  (attempt 1/3)
+2026-06-05 16:35:14  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/reports.php
+2026-06-05 16:35:14  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalReports::test_page_loads_with_both_sections[chromium]  (0.01s)
+2026-06-05 16:35:14  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:35:16  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:35:26  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:35:28  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:35:28  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/reports.php  (attempt 1/3)
+2026-06-05 16:35:29  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/reports.php
+2026-06-05 16:35:29  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalReports::test_visits_report_all_fields_present[chromium]  (0.01s)
+2026-06-05 16:35:29  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:35:31  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:35:38  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:35:40  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:35:40  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/reports.php  (attempt 1/3)
+2026-06-05 16:35:41  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/reports.php
+2026-06-05 16:35:41  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalReports::test_disease_report_all_fields_present[chromium]  (0.01s)
+2026-06-05 16:35:41  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:35:48  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:35:56  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:35:59  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:35:59  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/users.php  (attempt 1/3)
+2026-06-05 16:36:45  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/users.php
+2026-06-05 16:36:46  [96mINFO[0m  pms_pw.pages.users_page         Add user submitted: funcuser_2af971
+2026-06-05 16:36:46  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalUsers::test_add_user_valid_data_appears_in_table[chromium]  (47.17s)
+2026-06-05 16:36:46  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:36:48  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:36:57  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:36:59  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:36:59  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/users.php  (attempt 1/3)
+2026-06-05 16:37:07  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/users.php
+2026-06-05 16:37:07  [96mINFO[0m  pms_pw.pages.users_page         Add user submitted: 
+2026-06-05 16:37:07  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalUsers::test_add_user_empty_username_stays_on_page[chromium]  (0.06s)
+2026-06-05 16:37:07  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:37:09  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:37:31  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:37:34  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:37:34  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/users.php  (attempt 1/3)
+2026-06-05 16:37:40  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/users.php
+2026-06-05 16:37:41  [96mINFO[0m  pms_pw.pages.users_page         Add user submitted: someuser
+2026-06-05 16:37:41  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalUsers::test_add_user_empty_password_stays_on_page[chromium]  (0.37s)
+2026-06-05 16:37:41  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:37:43  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:37:50  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:37:52  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:37:52  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/users.php  (attempt 1/3)
+2026-06-05 16:37:58  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/users.php
+2026-06-05 16:37:58  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalUsers::test_users_table_has_all_columns[chromium]  (0.02s)
+2026-06-05 16:37:59  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 16:38:00  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 16:38:08  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 16:38:10  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 16:38:10  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/users.php  (attempt 1/3)
+2026-06-05 16:38:18  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/users.php
+2026-06-05 16:38:18  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_functional.py::TestFunctionalUsers::test_seeded_admin_user_exists[chromium]  (0.01s)

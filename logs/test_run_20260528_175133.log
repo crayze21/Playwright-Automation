@@ -1,0 +1,4 @@
+2026-05-28 17:51:34  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-05-28 17:51:41  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-05-28 17:52:15  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-05-28 17:52:17  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_login.py::TestLogin::test_valid_login_redirects_to_dashboard[chromium]  (42.75s)

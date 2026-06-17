@@ -1,0 +1,72 @@
+2026-06-05 14:17:22  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:17:25  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:17:25  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_login_page_loads[chromium]  (2.82s)
+2026-06-05 14:17:25  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:17:27  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:17:31  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 14:17:33  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_valid_login[chromium]  (7.44s)
+2026-06-05 14:17:33  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:17:35  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:17:40  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 14:17:42  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 14:17:42  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_dashboard_loads[chromium]  (0.01s)
+2026-06-05 14:17:42  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:17:47  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:17:55  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 14:17:57  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 14:17:57  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patients.php  (attempt 1/3)
+2026-06-05 14:18:04  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patients.php
+2026-06-05 14:18:04  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_patients_page_loads[chromium]  (6.45s)
+2026-06-05 14:18:04  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:18:06  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:18:15  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 14:18:19  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 14:18:19  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/medicines.php  (attempt 1/3)
+2026-06-05 14:18:24  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/medicines.php
+2026-06-05 14:18:24  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_medicines_page_loads[chromium]  (5.77s)
+2026-06-05 14:18:25  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:18:28  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:18:36  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 14:18:39  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 14:18:39  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/medicine_details.php  (attempt 1/3)
+2026-06-05 14:18:47  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/medicine_details.php
+2026-06-05 14:18:48  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_medicine_details_page_loads[chromium]  (8.72s)
+2026-06-05 14:18:48  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:18:50  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:18:58  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 14:19:00  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 14:19:00  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/new_prescription.php  (attempt 1/3)
+2026-06-05 14:19:01  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/new_prescription.php
+2026-06-05 14:19:01  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_new_prescription_page_loads[chromium]  (0.76s)
+2026-06-05 14:19:01  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:19:05  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:19:14  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 14:19:16  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 14:19:16  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/patient_history.php  (attempt 1/3)
+2026-06-05 14:19:17  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/patient_history.php
+2026-06-05 14:19:17  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_patient_history_page_loads[chromium]  (0.46s)
+2026-06-05 14:19:17  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:19:19  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:19:28  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 14:19:30  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 14:19:30  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/reports.php  (attempt 1/3)
+2026-06-05 14:19:32  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/reports.php
+2026-06-05 14:19:32  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_reports_page_loads[chromium]  (1.63s)
+2026-06-05 14:19:32  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:19:34  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:19:42  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 14:19:45  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 14:19:45  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/users.php  (attempt 1/3)
+2026-06-05 14:19:59  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/users.php
+2026-06-05 14:19:59  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_users_page_loads[chromium]  (13.82s)
+2026-06-05 14:19:59  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:20:01  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:20:05  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 14:20:07  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 14:20:07  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_sidebar_all_links_present[chromium]  (0.03s)
+2026-06-05 14:20:07  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:20:09  [96mINFO[0m  pms_pw.pages.base_page          Page loaded: https://torejamedicalclinic.kesug.com/index.php
+2026-06-05 14:20:15  [96mINFO[0m  pms_pw.pages.login_page         Login attempted: admin
+2026-06-05 14:20:16  [96mINFO[0m  pms_pw.conftest                 Logged in as admin — dashboard reached
+2026-06-05 14:20:17  [96mINFO[0m  pms_pw.pages.base_page          Logged out
+2026-06-05 14:20:17  [96mINFO[0m  pms_pw.conftest                 PASS  tests/test_smoke.py::TestSmoke::test_smoke_logout_works[chromium]  (0.82s)

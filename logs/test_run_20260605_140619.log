@@ -1,0 +1,25 @@
+2026-06-05 14:06:21  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:06:21  [93mWARNING[0m  pms_pw.pages.base_page          Navigation timeout attempt 1: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://torejamedicalclinic.kesug.com/index.php
+Call log:
+  - navigating to "https://torejamedicalclinic.kesug.com/index.php", waiting until "domcontentloaded"
+
+2026-06-05 14:06:24  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 2/3)
+2026-06-05 14:06:24  [93mWARNING[0m  pms_pw.pages.base_page          Navigation timeout attempt 2: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://torejamedicalclinic.kesug.com/index.php
+Call log:
+  - navigating to "https://torejamedicalclinic.kesug.com/index.php", waiting until "domcontentloaded"
+
+2026-06-05 14:06:27  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 3/3)
+2026-06-05 14:06:27  [93mWARNING[0m  pms_pw.pages.base_page          Navigation timeout attempt 3: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://torejamedicalclinic.kesug.com/index.php
+Call log:
+  - navigating to "https://torejamedicalclinic.kesug.com/index.php", waiting until "domcontentloaded"
+
+2026-06-05 14:06:27  [93mWARNING[0m  pms_pw.conftest                 Screenshot saved: C:\Users\eugene\PycharmProjects\Playwright-Automation\screenshots\FAIL_tests_test_smoke.py_TestSmoke_test_smoke_login_page_loads[chromium]_20260605_140627.png
+2026-06-05 14:06:27  [91mERROR[0m  pms_pw.conftest                 Failure URL: chrome-error://chromewebdata/
+2026-06-05 14:06:27  [96mINFO[0m  pms_pw.conftest                 FAIL  tests/test_smoke.py::TestSmoke::test_smoke_login_page_loads[chromium]  (6.05s)
+2026-06-05 14:06:28  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 1/3)
+2026-06-05 14:06:28  [93mWARNING[0m  pms_pw.pages.base_page          Navigation timeout attempt 1: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://torejamedicalclinic.kesug.com/index.php
+Call log:
+  - navigating to "https://torejamedicalclinic.kesug.com/index.php", waiting until "domcontentloaded"
+
+2026-06-05 14:06:31  [96mINFO[0m  pms_pw.pages.base_page          Navigating to: https://torejamedicalclinic.kesug.com/index.php  (attempt 2/3)
+2026-06-05 14:06:31  [93mWARNING[0m  pms_pw.pages.base_page          Navigation timeout attempt 2: Page.goto: Target page, context or browser has been closed
